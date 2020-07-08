@@ -1,7 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-
 import { gradeRouter } from './routes/gradeRouter.js';
 import { logger } from './config/logger.js';
 import { db } from './models/index.js';
