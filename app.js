@@ -8,7 +8,7 @@ import { db } from './models/index.js';
 
 (async () => {
   try {
-    await db.mongoose.connect(db.url, {
+    await db.mongoose.connect(process.env.MONGODBURI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
